@@ -55,16 +55,18 @@ if(isset($_POST['user_login']))
 
 <body>
     <div class="login">
-    <h2><span style="color: #4285F4;">G</span><span style="color: red;">O</span>
-    <span style="color: yellow;">O</span><span style="color: #4285F4;">G</span>
-    <span style="color: lightgreen;">L</span><span style="color: red;">E</span></h2>
-        
+    <img src="image/logo1.png" width="20%">
+    <h1 style="color: #202124; padding-bottom: 0; padding-top: 16px; font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif; font-size: 24px; font-weight: 400; line-height: 1.3333; margin-bottom: 0; margin-top: 0;">Sign in</h1>
+    <p style="color: #202124; font-size: 16px; font-weight: 400; letter-spacing: .1px; line-height: 1.5; padding-bottom: 0; padding-top: 8px;">to continue to Gmail</p>
+        <br>
         <form method="post">
-            <p><input type="email" name="user_email" placeholder="Enter Email" class="txt"></p>
-            <p><input type="password" name="user_pass" placeholder="Enter Password" class="txt"></p>
+            <p><input type="email" name="user_email" placeholder="Email or phone" class="txt"></p>
+            <p><input type="password" name="user_pass" placeholder="Password" class="txt"></p>
             <p><input type="submit" name="user_login" value="SIGN IN    " class="btn"></p>
-            <br>
             <p class="msg"><?php echo @$msg; ?></p>
+            <h1 style="color: #202124; padding-bottom: 0; padding-top: 16px; font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif; font-size: 24px; font-weight: 400; line-height: 1.3333; margin-bottom: 0; margin-top: 0;">OR</h1>
+            <br>
+            <p><a href="registration.php" class="btn2">Create account</p>
         </form>
     
     </div>
